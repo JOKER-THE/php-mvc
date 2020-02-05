@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use core\View;
+
 /**
  * Главный контроллер проекта
  *
@@ -14,6 +16,6 @@ class SiteController
      */
     public function actionIndex() :void
     {
-        echo 'index page';
+        View::render('index');
     }
 }
