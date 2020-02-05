@@ -29,7 +29,7 @@ class App
          * Пространство имен для контроллеров и именование действий
          *
          */
-        $controller = 'controllers\\' . $controller . 'Controller';
+        $controller = 'app\controllers\\' . ucfirst($controller) . 'Controller';
         $action = 'action' . ucfirst($action);
 
         if (!class_exists($controller)) {
