@@ -33,4 +33,16 @@ class SiteController
         	'model' => $model
         ]);
     }
+
+    /**
+     * Функция с параметрами
+     *
+     * @param integer $integer
+     * @param string $string
+     */
+    public function actionParams(int $integer, string $string) :void
+    {
+        var_dump($integer);
+        var_dump($string);
+    }
 }
